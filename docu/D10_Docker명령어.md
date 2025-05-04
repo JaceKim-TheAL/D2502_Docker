@@ -245,5 +245,107 @@ sudo systemctl enable docker
         </tr>
     </tbody>
 </table>
+<br/>
 
+- 특수 커멘드 (상위 커맨드 없이 단독. 주로 도커 허브의 검색, 로그인)
+<table>
+    <thead>
+        <tr>
+            <th>단독 커맨드</th>
+            <th>내용</th>
+            <th>주요 옵션</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>login</td>
+            <td>도커 레지스트리에 로그인</td>
+            <td>-u, -p</td>
+        </tr>
+        <tr>
+            <td>logout</td>
+            <td>도커 레지스트리에 로그아웃</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>search</td>
+            <td>도커 레지스트리 검색</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>version</td>
+            <td>도커 엔진 및 명령행 도구의 버전 출력</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+
+- 주요 옵션
+> - 컨테이너에 따라 지정 가능한 옵션/인자가 달라짐
+> - 컨테이너는 ‘한 번만 실행되는 컨테이너’와 ‘데몬 형태로 동작하는 컨테이너’가 있음.
+
+<table>
+    <thead>
+        <tr>
+            <th>옵션 형식</th>
+            <th>내용</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—name 컨테이너_이름</td>
+            <td>컨테이너 이름 지정</td>
+        </tr>
+        <tr>
+            <td>-p 호스트_포트번호:컨테이너_포트번호</td>
+            <td>포트번호 지정 <br>(—publish 생략형)</td>
+        </tr>
+        <tr>
+            <td>-v 호스트_디스크:컨테이너_디렉터리</td>
+            <td>볼륨 마운트 <br>(—volume 생략형)</td>
+        </tr>
+        <tr>
+            <td>—net=네트워크_이름</td>
+            <td>컨테이너 네트워크에 연결</td>
+        </tr>
+        <tr>
+            <td>-e 환경변수_이름=값</td>
+            <td>환경변수 설정 <br>(—env 생략형)</td>
+        </tr>
+        <tr>
+            <td>-d</td>
+            <td>백그라운드로 실행 <br>(—detach 생략형)</td>
+        </tr>
+        <tr>
+            <td>-i</td>
+            <td>컨테이너에 터미널(키보드)을 연결함 <br>(—interactive 생략형)</td>
+        </tr>
+        <tr>
+            <td>-t</td>
+            <td>특수 키 사용 가능 <br>(—tty 생략형)</td>
+        </tr>
+        <tr>
+            <td>-help</td>
+            <td>사용 방법 안내 메시지</td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+
+### 3. 컨테이너 생성, 삭제, 실행, 정지
+```docker 
+docker run (옵션) 이미지 (인자)
+
+docker stop 컨테이너_이름
+
+docker rm 컨테이너_이름
+
+docker ps -a
+```
+
+**예제**
+- 아파치 이미지(httpd)
+> - docker run --name apa000ex1 -d httpd
+> - -d: —detach 백그라운드로 실행
 
