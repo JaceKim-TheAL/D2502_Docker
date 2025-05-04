@@ -56,4 +56,194 @@ sudo systemctl enable docker
 >>> - 유닉스, 리눅스에서 동작하는 프로그램 중에서 백그라운드에서 항상 동작하는 프로그램을 관례적으로 데몬(daemon)이라고 부름. `ex)메일러 데몬`
 
 - 명령어 정리
+<table>
+    <thead>
+        <tr>
+            <th>docker 명령</th>
+            <th>상위 커맨드</th>
+            <th>하위 커맨드</th>
+            <th></th>
+            <th>주요 옵션</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>docker</td>
+            <td>container</td>
+            <td>start</td>
+            <td>컨테이너 실행</td>
+            <td>-i</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>stop</td>
+            <td>컨테이너 정지</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>create</td>
+            <td>(이미지로 부터) 컨테이너 생성</td>
+            <td>—name, -e, -p, -v</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>run</td>
+            <td>세개의 명령을 하나로 합침(이미지 내려받기, 컨테이너 생성, 실행) <br> docker image pull <br>docker container create <br>docker
+                container start</td>
+            <td>—name, -e, -p, -v, -d, -i, -t</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>rm</td>
+            <td>정지 상태 컨테이너 삭제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>exec</td>
+            <td>실행중인 컨테이너 속에서 프로그램 실행</td>
+            <td>-i -t</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>ps <br>ls (상위커멘드 생략 X)</td>
+            <td>(실행 중인)컨테이너 목록 출력</td>
+            <td>-a (정지상태 컨테이너 포함)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>cp</td>
+            <td>도커 컨테이너 - 도커 호스트 간에 파일 복사</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>commit</td>
+            <td>도커 컨테이너를 이미지로 변환</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>image</td>
+            <td>pull</td>
+            <td>도커 허브 리포지토리에서 이미지 다운</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>rm</td>
+            <td>도커 이미지 삭제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>ls</td>
+            <td>내려받은 이미지 목록</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>build</td>
+            <td>이미지 생성</td>
+            <td>-t</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>volume</td>
+            <td>create</td>
+            <td>볼륨 생성</td>
+            <td>—name</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>inspect</td>
+            <td>볼륨 상세 정보</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>ls</td>
+            <td>볼륨 목록</td>
+            <td>-a</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>prune</td>
+            <td>현재 마운트되지 않은 볼륨을 모든 삭제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>rm</td>
+            <td>볼륨 삭제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>network</td>
+            <td>connect</td>
+            <td>네트워크 연결</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>disconnect</td>
+            <td>네트워크 연결 해제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>create</td>
+            <td>네트워크 생성</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>inspect</td>
+            <td>네트워크 상세 정보</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>ls</td>
+            <td>네트워크 목록</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>prune</td>
+            <td>현재 컨테이너가 접속하지 않은 네트워크 모두 삭제</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>rm</td>
+            <td>네트워크 삭제</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
 
