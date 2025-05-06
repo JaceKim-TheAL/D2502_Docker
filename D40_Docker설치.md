@@ -1,15 +1,6 @@
-### INDEX
-- [1. Docker 개념         ][link-docker10]
-- [2. Docker 명령어       ][link-docker20]
-- [3. WLS2 설치           ][link-docker30]
-- [4. Docker 설치         ][link-docker40]
-
-[link-docker10]: ./D10_Docker개념.md
-[link-docker20]: ./D20_Docker명령어.md
-[link-docker31]: ./D31_WSL2설치.md
-[link-docker32]: ./D32_WSL2설치.md
-[link-docker40]: ./D40_Docker설치.md
-
+<p style="text-align: right"> 
+    <a href="./README.md">[INDEX]</a>
+</p>
 
 ---
 ## Docker 설치
