@@ -1,11 +1,6 @@
-### INDEX
-- [1. Docker 개념         ][link-docker10]
-- [2. Docker 명령어       ][link-docker20]
-- [3. Docker 설치         ][link-docker30]
-
-[link-docker10]: ./D10_Docker개념.md
-[link-docker20]: ./D20_Docker명령어.md
-[link-docker30]: ./D30_Docker설치.md
+<p style="text-align: right"> 
+    <a href="./README.md">[INDEX]</a>
+</p>
 
 ---
 ## Docker 개념
