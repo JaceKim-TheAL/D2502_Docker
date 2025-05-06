@@ -8,6 +8,6 @@
 
 [link-docker10]: ./D10_Docker개념.md
 [link-docker20]: ./D20_Docker명령어.md
-[link-docker30]: ./D20_Docker설치.md
+[link-docker30]: ./D30_Docker설치.md
 
 
