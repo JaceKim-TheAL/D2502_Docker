@@ -48,7 +48,8 @@ VSCode에서 Extension
 
 ---
 
-### [VSCode devcontianer 개발 환경 구축, Dockerfile로 커스텀][link-devcontinaer]
+### [VSCode devcontianer 개발 환경 구축, Dockerfile로 커스텀][link-devcontainer]
+
 
 
 
