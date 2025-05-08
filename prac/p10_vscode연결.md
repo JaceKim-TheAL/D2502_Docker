@@ -9,15 +9,8 @@ VSCode에서 Extension
 
 ### [WSL을 사용하여 Windows에 Linux를 설치하는 방법][link-wsl-install]
 
-- WSL 설치 명령
+- WSL 설치 및 실행
 ```powershell
-wsl --install
-```
-
-- WSL이 도움말 텍스트
-```powershell
-wsl --install 
-
 # WSL1에서 WLS2로 변경경
 wsl --set-version Ubuntu 2
 
@@ -40,7 +33,6 @@ wsl --set-default Ubuntu-20.04
 
 ### WSL 다시 시작, Ubuntu 20.04가 기본적으로 실행
 wsl
-
 
 ```
 
