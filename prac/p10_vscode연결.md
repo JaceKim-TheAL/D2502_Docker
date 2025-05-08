@@ -35,7 +35,8 @@ Tip.
 <br/>
 <br/>
 
-[도커와 VSCode 연결해서 사용하기][link-youtube]
+---
+### [도커와 VSCode 연결해서 사용하기][link-youtube]
 
 VSCode에서 Extension
 - Remote Development
