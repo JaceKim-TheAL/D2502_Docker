@@ -41,6 +41,9 @@ Tip.
 VSCode에서 Extension
 - Remote Development
 - Docker
+- Dev Containers 
+
+
 
 원격탐색기에서 
 개발 컨테이너를 마치 로컬 개발 환경처럼 사용할 수 있도록 하기
