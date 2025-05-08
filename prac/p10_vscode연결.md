@@ -31,7 +31,7 @@ wsl
 
 Tip.
 > - PowerShell 또는 명령 프롬프트가 아닌 Linux/Bash 명령줄 내에서 추가 배포판을 설치하려면 <br/>
-> wsl.exe --install -d <Distribution Name> 명령 또는 wsl.exe -l -o 명령(사용 가능한 배포판을 나열하려는 경우)에서 .exe를 사용해야 합니다.
+> `wsl.exe --install -d <Distribution Name>` 명령 또는 `wsl.exe -l -o` 명령(사용 가능한 배포판을 나열하려는 경우)에서 **.exe를 사용**해야 합니다.
 <br/>
 <br/>
 
